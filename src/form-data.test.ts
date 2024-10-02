@@ -1,7 +1,7 @@
 import { expect, describe, test } from 'vitest';
 import { parse } from './form-data';
 
-describe('GIVE getFormData', () => {
+describe('GIVEN getFormData', () => {
   test('WHEN gets formData THEN should return an object with the same values', () => {
     const formData = new FormData();
     formData.append('hej', 'da');

@@ -1,6 +1,6 @@
 import { toLower } from './string';
 
-export const isObjectEmpty = (obj: unknown): boolean => !obj || Object.keys(obj).length === 0;
+export const isObjectEmpty = (obj: unknown): obj is undefined => !obj || Object.keys(obj).length === 0;
 
 export const isObject = (item: unknown) => {
   return item && typeof item === 'object' && !Array.isArray(item);
