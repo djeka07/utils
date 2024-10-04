@@ -6,6 +6,6 @@ describe('GIVEN getFormData', () => {
     const formData = new FormData();
     formData.append('hej', 'da');
     formData.append('test', 'test2');
-    expect(parse(formData)).toEqual({ hej: 'da', test: 'test2' })
-  })
+    expect(parse(formData)).toEqual({ hej: 'da', test: 'test2' });
+  });
 });

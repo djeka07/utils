@@ -1,5 +1,6 @@
 export * from './array';
 export * from './class';
+export * from './debounce';
 export * from './form-data';
 export * from './functions';
 export * from './http';

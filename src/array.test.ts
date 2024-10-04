@@ -61,7 +61,7 @@ describe('GIVEN difference', () => {
   test('WHEN the second array has all the values as the first array THEN should return an empty array', () => {
     const arr1 = ['test', 'test2', 'test4'];
     const arr2 = ['test', 'test1', 'test3', 'test2', 'test4'];
-  
+
     expect(difference(arr1, arr2)).toEqual([]);
   });
 
@@ -95,17 +95,17 @@ describe('GIVEN groupBy', () => {
       { code: 'hej', name: 'hej' },
       { code: 'hej', name: 'hej2' },
       { code: 'hej2', name: 'hej3' },
-      { code: 'hej2', name: 'hej4' }
+      { code: 'hej2', name: 'hej4' },
     ];
     const expectedResult = {
       hej: [
         { code: 'hej', name: 'hej' },
-        { code: 'hej', name: 'hej2' }
+        { code: 'hej', name: 'hej2' },
       ],
       hej2: [
         { code: 'hej2', name: 'hej3' },
-        { code: 'hej2', name: 'hej4' }
-      ]
+        { code: 'hej2', name: 'hej4' },
+      ],
     };
     expect(groupBy(arr, 'code')).toEqual(expectedResult);
   });
@@ -154,13 +154,13 @@ describe('GIVEN sortBy', () => {
       { name: 'oranges', placementInList: 3 },
       { name: 'pear', placementInList: 4 },
       { name: 'bananas', placementInList: 4 },
-      { name: 'apples', placementInList: 3 }
+      { name: 'apples', placementInList: 3 },
     ];
     const expectedResult = [
       { name: 'apples', placementInList: 3 },
       { name: 'oranges', placementInList: 3 },
-      { name: 'bananas', placementInList: 4},
-      { name: 'pear', placementInList: 4 }
+      { name: 'bananas', placementInList: 4 },
+      { name: 'pear', placementInList: 4 },
     ];
 
     const result = sortBy(array, 'placementInList', 'name');

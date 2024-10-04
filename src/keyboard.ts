@@ -1,4 +1,4 @@
-import { KeyShift, KeyWithCode, KeyWithKey } from "./keyboard.types";
+import { KeyShift, KeyWithCode, KeyWithKey } from './keyboard.types';
 
 export const isEnterWithoutShift = (event: KeyWithKey & KeyShift): boolean => isEnter(event) && !isShiftKey(event);
 export const isEnterWithShift = (event: KeyWithKey & KeyShift): boolean => isEnter(event) && isShiftKey(event);
