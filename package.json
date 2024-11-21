@@ -1,5 +1,6 @@
 {
   "name": "@djeka07/utils",
+  "version": "1.0.12",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.cts",
@@ -13,7 +14,6 @@
       "default": "./dist/index.cjs"
     }
   },
-  "version": "1.0.11",
   "files": [
     "./dist/**/*"
   ],
