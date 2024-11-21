@@ -5,6 +5,7 @@
   "javascript.preferences.quoteStyle": "single",
   "prettier.singleQuote": true,
   "prettier.printWidth": 120,
+  "prettier.prettierPath": "",
   "typescript.preferences.quoteStyle": "single",
   "workbench.colorCustomizations": {},
   "editor.tabSize": 2,

@@ -1,12 +1,23 @@
 {
   "name": "@djeka07/utils",
   "main": "dist/index.cjs",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.cts",
+  "exports": {
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    },
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    }
+  },
   "version": "1.0.11",
   "files": [
     "./dist/**/*"
   ],
+  "sideEffects": false,
   "author": "André Ekbom",
   "license": "MIT",
   "scripts": {
@@ -17,7 +28,6 @@
     "rollup": "rollup -c --bundleConfigAsCjs",
     "prepublishOnly": "yarn build"
   },
-  "dependencies": {},
   "devDependencies": {
     "@babel/preset-typescript": "^7.24.7",
     "@eslint/compat": "^1.1.1",
@@ -44,5 +54,6 @@
     "vite-plugin-dts": "^4.2.3",
     "vite-tsconfig-paths": "^4.3.2",
     "vitest": "^2.1.1"
-  }
+  },
+  "packageManager": "yarn@4.5.1"
 }
