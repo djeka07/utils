@@ -22,6 +22,7 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn clean && tsc && vite build",
+    "check": "attw --pack .",
     "clean": "rm -rf ./dist",
     "test": "vitest",
     "lint": "eslint .",
@@ -29,6 +30,7 @@
     "prepublishOnly": "yarn build"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.17.0",
     "@babel/preset-typescript": "^7.24.7",
     "@eslint/compat": "^1.1.1",
     "@rollup/plugin-commonjs": "^28.0.0",
